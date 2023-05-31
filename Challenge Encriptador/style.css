@@ -1,0 +1,87 @@
+body{
+    font-family: Roboto, Montserrat, serif;
+    background: url("bg.jpeg");
+}
+
+header{
+    padding: 50px 0 0 30px;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 40px;
+    color: dimgray;
+}
+
+textarea{
+    resize: none;
+    background: #c1cad6;
+    border-radius: 1em;
+    border-width: 2px;
+    outline-color: cadetblue;
+}
+
+textarea:hover{
+    border-color: darkblue;
+    border-width: 3px;
+}
+
+.text-input textarea{
+    float: left;
+    margin: 120px 40px 0 10%;
+}
+
+
+.text-output textarea{
+    float: right;
+    margin: 120px 100px 0 0;
+}
+
+.text-input button{
+    width: 10%;
+    padding: 15px 0;
+    font-size: 15px;
+    color: white;
+    background: steelblue;
+    border-width: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.subcodificar, .subdecodificar, .text-output button{
+    transition: color 0.5s, background 0.75s;
+}
+
+.subcodificar:hover, .subdecodificar:hover, .text-output button:hover{
+    color: black;
+    font-size: 16px;
+    background: lightslategrey;
+}
+
+.subcodificar{
+    float: left;
+    margin: 250px 5px 0 auto;
+}
+
+.subdecodificar{
+    float: left;
+    margin: 250px 0 0 5px;
+}
+
+.text-output button{
+    width: 10%;
+    padding: 15px 0;
+    font-size: 15px;
+    color: white;
+    background: cadetblue;
+    border-width: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.copy{
+    float: right;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+

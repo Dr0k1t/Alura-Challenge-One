@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-Mx">
+<head>
+    <meta charset="UTF-8">
+    <title>Codificador - Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="encrypt.js"></script>
+    <script src="clipboard.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="titulo_principal">Codificador - Decodificador</h1>
+        </div>
+    </header>
+    <main>
+        <section class="text-input">
+            <label for="text-input"></label>
+            <textarea name="text" id="text-input" cols="50" rows="25" placeholder="Ingresa el texto sin mayúsculas, acentos ni caracteres especiales"></textarea>
+            <button onclick="encrypt()" class ="subcodificar" id="BtnEncriptar">Encriptar</button>
+            <button onclick="decrypt()" class ="subdecodificar" id="BtnDesencriptar">Desencriptar</button>
+        </section>
+        <section class="text-output">
+            <label for="text-output"></label>
+            <textarea name="text" id="text-output" cols="50" rows="25" placeholder="Resultado"></textarea>
+            <button type="button" class="copy" data-clipboard-action="cut" data-clipboard-target="#text-output">Copiar código</button>
+            <script>
+                new Clipboard('.copy');
+            </script>
+        </section>
+    </main>
+</body>
+</html>
